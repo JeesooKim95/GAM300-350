@@ -1,0 +1,718 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1435661311481898061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435661311481898060}
+  - component: {fileID: 1435661311481898067}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1435661311481898060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435661311481898061}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 136.34099, y: -4.848478, z: -53.09663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1435661311481898067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435661311481898061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6edaec865d9a2449dc4c5ee5e83ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundList:
+  - name: EnemyHurt
+    clip: {fileID: 8300000, guid: be922e8d9e0dd68469e671f82cf68b16, type: 3}
+    volume: 0.2
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: ItemGet
+    clip: {fileID: 8300000, guid: 3741a6c0300e02c498624027b8cd3cb0, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ItemThrowed
+    clip: {fileID: 8300000, guid: 618b7be9a3c26d041822c64ad0742d14, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossAttack
+    clip: {fileID: 8300000, guid: 9ba07a9ddb7f893479647d8f1cbbea93, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Reloading
+    clip: {fileID: 8300000, guid: 11f8fdea917a27347b90f5c22d06e6dc, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: 371a79610c78b51488369a26ba3d2aaa, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 473ff20511efd2c4081a45eeb91b66c0, type: 3}
+    volume: 0.14
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Portal
+    clip: {fileID: 8300000, guid: e73a036262f758d4c8f9b88fa49228ba, type: 3}
+    volume: 0.5
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerGetDamaged
+    clip: {fileID: 8300000, guid: 976f167356d71d84ba4d33b37a378823, type: 3}
+    volume: 0.6
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: BossCannonBigAttack
+    clip: {fileID: 8300000, guid: 551776ebde2a95444b7a04db1a7c220c, type: 3}
+    volume: 0.35
+    pitch: 0.85
+    loop: 0
+    source: {fileID: 0}
+  - name: BossCannonSmallAttack
+    clip: {fileID: 8300000, guid: 2c77a1d5a8937dd4882d696a82c837d7, type: 3}
+    volume: 0.325
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath
+    clip: {fileID: 8300000, guid: 59b821abfac158c4582e784775da10f8, type: 3}
+    volume: 1
+    pitch: 1.2
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyAttack
+    clip: {fileID: 8300000, guid: c0c69a7d0dceee9429f0944f1da0bbb9, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyRangeAttack
+    clip: {fileID: 8300000, guid: 6381a6c44a93b2b429f383a0ac4f064a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyHealing
+    clip: {fileID: 8300000, guid: d2fbf00c79bf7dd4b8e28dfad8687777, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerShieldCharge
+    clip: {fileID: 8300000, guid: 8f828cb3e6cdbd14cb2db81167ab5594, type: 3}
+    volume: 0.2
+    pitch: 1.2
+    loop: 1
+    source: {fileID: 0}
+  - name: EnemySummon
+    clip: {fileID: 8300000, guid: 431b555e4f4984d4a9745e86f41d0940, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyAggro
+    clip: {fileID: 8300000, guid: 81a33c1257f8dec4bb041ad7c0954505, type: 3}
+    volume: 0.7
+    pitch: 1.1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flush
+    clip: {fileID: 8300000, guid: 41a4f96db2c81574fb7bfeae918b19de, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fourcard
+    clip: {fileID: 8300000, guid: ac209b27500de8043813009ffb41fd85, type: 3}
+    volume: 0.425
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FullHouse
+    clip: {fileID: 8300000, guid: 574010c049060c34f9a80dee38501ef0, type: 3}
+    volume: 0.325
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pair
+    clip: {fileID: 8300000, guid: 7a258fd4c1869f548b0e5dad1333f848, type: 3}
+    volume: 0.35
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Straight
+    clip: {fileID: 8300000, guid: 00f9e720858abe64aa8f23cdd3f91bdd, type: 3}
+    volume: 0.425
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}
+  - name: StraightFlush
+    clip: {fileID: 8300000, guid: 71b45a988f19dfb4ebb5b37d911df48a, type: 3}
+    volume: 0.6
+    pitch: 1.25
+    loop: 0
+    source: {fileID: 0}
+  - name: Top
+    clip: {fileID: 8300000, guid: 38dfc3d78ed3f7a4a8f1e1dbf5f35d61, type: 3}
+    volume: 0.35
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Triple
+    clip: {fileID: 8300000, guid: 9d3b0d4c4b830d445accfa6f3e5cf87c, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TwoPair
+    clip: {fileID: 8300000, guid: 39ba97b79b8cb584bb47a365973337e8, type: 3}
+    volume: 0.35
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ElevatorDing
+    clip: {fileID: 8300000, guid: aef6dc31b2a7da243a80fda7ed93431a, type: 3}
+    volume: 0.45
+    pitch: 0.8
+    loop: 0
+    source: {fileID: 0}
+  - name: ElevatorOpened
+    clip: {fileID: 8300000, guid: 5ab4d7654c10a964da3b549ee9dc0121, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ElevatorClosed
+    clip: {fileID: 8300000, guid: e8ad583c2b9ba594d9ba0a2629fe273b, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerSkillHeal
+    clip: {fileID: 8300000, guid: daf46a4f906d8ce46adde55b7f3acb6f, type: 3}
+    volume: 0.275
+    pitch: 1.125
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerSkillSpeedUp
+    clip: {fileID: 8300000, guid: 3f499cf531507f54aa90ac740e4b59d2, type: 3}
+    volume: 0.35
+    pitch: 1.125
+    loop: 0
+    source: {fileID: 0}
+  - name: BossDice
+    clip: {fileID: 8300000, guid: 5c2666cb29b88ea44a8023620405f31b, type: 3}
+    volume: 0.9
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: BossMove
+    clip: {fileID: 8300000, guid: c10ec34f08539374d9eb5c9254d1fce9, type: 3}
+    volume: 0.35
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossFallingFloorWarning
+    clip: {fileID: 8300000, guid: f3c1133bed2a6f94e8ba5adfffecc90b, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossFallingFloor
+    clip: {fileID: 8300000, guid: 7b908367120ae824db4e10e1fbf9f4a4, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CardsPowerOff
+    clip: {fileID: 8300000, guid: 46afc731910547c49b949142c34c09e2, type: 3}
+    volume: 0.325
+    pitch: 0.75
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyGetWaterDamage
+    clip: {fileID: 8300000, guid: 8229d7d665168ea4595fd6be369c2bf7, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyGetExplosion
+    clip: {fileID: 8300000, guid: 06748ac09b796e74ab6ac01e41801a58, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyGetIceDamage
+    clip: {fileID: 8300000, guid: fb4ce474f858d244e97f2025f96423f0, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerImpossible
+    clip: {fileID: 8300000, guid: f60d528641d9d3d49acca7e1a5c4f2ec, type: 3}
+    volume: 0.35
+    pitch: 1.75
+    loop: 0
+    source: {fileID: 0}
+  - name: PortalEnv
+    clip: {fileID: 8300000, guid: 7a62e4538341dbc4a8f15386a557c038, type: 3}
+    volume: 0.75
+    pitch: 1.75
+    loop: 0
+    source: {fileID: 0}
+  - name: ButtonHover
+    clip: {fileID: 8300000, guid: fa0800f4dfe1dce4888624e3f80b8c18, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossDead
+    clip: {fileID: 8300000, guid: e4018f33203ed35449f04a30992d9508, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossPhaseTransition
+    clip: {fileID: 8300000, guid: f0887a1511796714cbf3f05fe754e5e5, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CastingBalls
+    clip: {fileID: 8300000, guid: 484ca988beb60b046a9b421903aeba1e, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ThrowBalls
+    clip: {fileID: 8300000, guid: 81e1586afd439e54f87b76ec3bf460e3, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CastingWinds
+    clip: {fileID: 8300000, guid: abaffbabef574834880f9f0d7c52b646, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CastingExplosion
+    clip: {fileID: 8300000, guid: 3cf69a299c0f66640b87a76ebcb235ca, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: 8a6a902e7d277854d8d5cfb3255d9dc3, type: 3}
+    volume: 0.35
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: QueenBlizzard
+    clip: {fileID: 8300000, guid: e5aa525aad333434a8a924fc1a64cc4b, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FifthCard
+    clip: {fileID: 8300000, guid: de43b21f07689d04590378265c850ecb, type: 3}
+    volume: 0.3
+    pitch: 1.4
+    loop: 0
+    source: {fileID: 0}
+  - name: FirstShot
+    clip: {fileID: 8300000, guid: c311da4205914894ebd883a1e7d86f29, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  shootingSoundList:
+  - name: Shoot1
+    clip: {fileID: 8300000, guid: b2672d8422ef48442880d6db47cfabee, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot2
+    clip: {fileID: 8300000, guid: bad42c5d0ab27014d8c05d67e5fe692e, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot3
+    clip: {fileID: 8300000, guid: 1ba8d8a56097d1d4190fb71e5f1d600c, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot4
+    clip: {fileID: 8300000, guid: 4ca87afa562b40340acb06ecd209a4aa, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot5
+    clip: {fileID: 8300000, guid: f7a936d525a8b3147bd1df1aad5e3d6c, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot6
+    clip: {fileID: 8300000, guid: 4384f654d36ddc9419e193eb3e876c4e, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot7
+    clip: {fileID: 8300000, guid: 2241615261f507c478197c7b62c4fa51, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot8
+    clip: {fileID: 8300000, guid: 9d844a320d82c4c4b8101de4400e3cea, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  walkingSoundList:
+  - name: Walk1
+    clip: {fileID: 8300000, guid: 318851b1c84eaf249b36a9cf61ff87f7, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk2
+    clip: {fileID: 8300000, guid: 25f0eed7723bbd041bfa78bba06054b5, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk3
+    clip: {fileID: 8300000, guid: c012e63c6f081d6488bfbe56e4c780b2, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk4
+    clip: {fileID: 8300000, guid: ebc5249c1ec6b7d43b7a547b73cbeb56, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk5
+    clip: {fileID: 8300000, guid: d17dd86796ecc2a428c4020b95c5c578, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk6
+    clip: {fileID: 8300000, guid: f54ba67f26eec3246af9a8760d7ade8d, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk7
+    clip: {fileID: 8300000, guid: 019d74e386355ad47acea00854159a65, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk8
+    clip: {fileID: 8300000, guid: 4fb7e22a924971a4bb03abe6376dad6c, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk9
+    clip: {fileID: 8300000, guid: 5c1debc2306a7784f91302e1510d95f9, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk10
+    clip: {fileID: 8300000, guid: 5fa09e4364e0a8749ab56cac9a58ed78, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk11
+    clip: {fileID: 8300000, guid: 8327c03e8220efd499ae47e8baa9cf58, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk12
+    clip: {fileID: 8300000, guid: 03e669842c61ae44288fabdde234f044, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk13
+    clip: {fileID: 8300000, guid: 1ce2a4e99ec6f5a42abb1af2834fa4c3, type: 3}
+    volume: 0.45
+    pitch: 2
+    loop: 0
+    source: {fileID: 0}
+  bgmList:
+  - name: Theme
+    clip: {fileID: 8300000, guid: bdaf534e377860d428928c2219f77a1f, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: MainMenuBGM
+    clip: {fileID: 8300000, guid: 7edc3e1c805402a49bbd912f5bfdfc3e, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: DeathBGM
+    clip: {fileID: 8300000, guid: 65546552897b70c4ea9671e81edbb743, type: 3}
+    volume: 0.04
+    pitch: 0.75
+    loop: 1
+    source: {fileID: 0}
+  - name: VictoryBGM
+    clip: {fileID: 8300000, guid: 90c14a3079384be4591a4754cbd8e531, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: ForestBGM
+    clip: {fileID: 8300000, guid: 1def17d6e475fcf4296d11421d536d38, type: 3}
+    volume: 0.04
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: PrisonBGM
+    clip: {fileID: 8300000, guid: b53fe45608d397f4f9a1ec53d2ca3df0, type: 3}
+    volume: 0.04
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: SnowBGM
+    clip: {fileID: 8300000, guid: e3bdc22ecae01404b939f30fbddb9fad, type: 3}
+    volume: 0.04
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: DesertBGM
+    clip: {fileID: 8300000, guid: 489df86484bf46d4fbea974744f5122e, type: 3}
+    volume: 0.04
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: TutorialBGM
+    clip: {fileID: 8300000, guid: 9e03bf0ad5887c646ac0264f82648d1c, type: 3}
+    volume: 0.04
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BossBGM
+    clip: {fileID: 8300000, guid: 730236733927c0e4e8e54189f3939e7d, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  environmentalSFXList:
+  - name: DarkForestEnvSFX
+    clip: {fileID: 8300000, guid: f21f1f70555699f479004dd3f2066687, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: LightForestEnvSFX
+    clip: {fileID: 8300000, guid: 9a05a6c8c599d6041b562c7911cd14aa, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: DesertEnvSFX
+    clip: {fileID: 8300000, guid: 204786d7d5545e8418f561bb5ef0d31c, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: PrisonEnvSFX
+    clip: {fileID: 8300000, guid: 6613fa4ab9961fc4cb42cc56d4aaa8b4, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: SnowEnvSFX
+    clip: {fileID: 8300000, guid: 6ecddac337565304b882b3b455dcef39, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  drawCardSoundList:
+  - name: DrawCard1
+    clip: {fileID: 8300000, guid: 9121d0d20abaac04dbba0ab18263208d, type: 3}
+    volume: 0.4
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: DrawCard2
+    clip: {fileID: 8300000, guid: 205b12ab42fc23441bb4801f07ab4535, type: 3}
+    volume: 0.4
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: DrawCard3
+    clip: {fileID: 8300000, guid: 9dbe6644c57259b4bb5e0a62ae2b2264, type: 3}
+    volume: 0.4
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: DrawCard4
+    clip: {fileID: 8300000, guid: 1c40b4ff1c961de4bb8a6d6cec29e81c, type: 3}
+    volume: 0.4
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  activateCardSoundList:
+  - name: ActivateCard1
+    clip: {fileID: 8300000, guid: b3c46ccf6fb30254b9e2e5668fbc916b, type: 3}
+    volume: 0.4
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: ActivateCard2
+    clip: {fileID: 8300000, guid: 376a6e060dc5ea1499868a112e318222, type: 3}
+    volume: 0.4
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  dashSoundList:
+  - name: Dash1
+    clip: {fileID: 8300000, guid: 593aa7032ec2cea45bac375c7d2e2e8f, type: 3}
+    volume: 0.22
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: Dash2
+    clip: {fileID: 8300000, guid: 6b9ba24ab3844394eabfeb5545ce2ec4, type: 3}
+    volume: 0.22
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: Dash3
+    clip: {fileID: 8300000, guid: bb8d55dfe7f039c4caf88c8efd84b25f, type: 3}
+    volume: 0.22
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  - name: Dash4
+    clip: {fileID: 8300000, guid: 66d746aeb8ba6a047987d42b179c3c35, type: 3}
+    volume: 0.22
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
+  iceShootingSoundList:
+  - name: IceShoot1
+    clip: {fileID: 8300000, guid: d024e524713af63439da48ca07f37032, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot2
+    clip: {fileID: 8300000, guid: fbd583dffbfbfda4eb0ec01d0f15e28d, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot3
+    clip: {fileID: 8300000, guid: 136a391adca9d6e41aa0117a02884cee, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot4
+    clip: {fileID: 8300000, guid: 0e34a637ef077bb42878791452a00366, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot5
+    clip: {fileID: 8300000, guid: 56097d4b725919a4b89a991c576278fd, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot6
+    clip: {fileID: 8300000, guid: f8cf132f9cd086c43a822191f2af4d37, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot7
+    clip: {fileID: 8300000, guid: 74b5de2362fb6a145951f1631bebbee2, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot8
+    clip: {fileID: 8300000, guid: f04a59e4af1f3534892efaaace759d65, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot9
+    clip: {fileID: 8300000, guid: 854e56c42f3b57b4696c8faf5a7e4900, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: IceShoot10
+    clip: {fileID: 8300000, guid: 6dd21bc9c473e4640918c207d6889570, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  combatBGM:
+    name: CombatBGM
+    clip: {fileID: 8300000, guid: 3caecd73af09bff428ec990808257a36, type: 3}
+    volume: 0.145
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  timer: 0
+  itemTimer: 0
+  isBossBattle: 0

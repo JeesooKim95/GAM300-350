@@ -1,0 +1,26 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct Projectile
+{
+    float3 position;
+    float3 randomVec;
+};
+
+RWStructuredBuffer<Projectile> projectiles;
+//RWStructuredBuffer<float3> positions;
+//RWStructuredBuffer<float3> randomVec;
+uniform float speed;
+uniform float time;
+
+[numthreads(10,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    uint bufferId = id.x;
+    Projectile obj = projectiles[bufferId];
+    float3 position = obj.position;
+    float3 dir = obj.randomVec;
+
+    float3 newPosition = position + (dir * speed * time);
+    projectiles[bufferId].position = newPosition;
+}

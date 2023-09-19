@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 9dfd3d9dab60bf442bf71067b7984a03
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spriteSource: {fileID: 21300000, guid: 175a8d3f130bda042ad73f24a68c6824, type: 3}
+  - UICanvas: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
